@@ -1,0 +1,97 @@
+.btn1
+{
+    margin-right: 20px;
+}
+
+.btn2
+{
+    margin-right: 80px;
+}
+.back
+{ 
+background-color: black;
+
+}
+
+.images
+{
+    padding-right: 20px;
+    text-align: justify;
+}
+
+
+.table
+{
+   display: flex; 
+   flex-wrap: wrap; 
+   flex: 1 ;
+   padding: 15px;
+   
+}
+
+shop-btns{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.shop-btns ul li{
+    list-style-type: none;
+    display:inline;
+    
+}
+
+.ourCat ul li{
+list-style-type: none;
+padding: 10px;
+}
+.ourCat ul li a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+function men(){
+
+    // document.getElementById("all").style.display="none";
+    // document.getElementById("men").style.display="block";
+    // // men.innerHTML="";
+  var men=document.getElementById("men")
+  
+  for(let i of data)
+  {
+    
+    if(i.category==="men clothing")
+      // console.log()
+    {
+  
+      var board = document.createElement('div');
+      
+      board.innerHTML = `<div class="card" id="men" style="width: 16rem;">
+      <img class="card-img-top" src="${i.image}"  alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">${i.title}</h5>
+        <p class="card-text">${i.description}</p>
+        <h4> Price : ${i.price} </h4>
+      </div>
+      
+      <div class="card-body">
+        <a href="#" class="card-link">Add To Cart</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>`
+  
+      board.className = "allDiv";
+  
+  
+     
+      itemData.appendChild(board);            
+   
+      
+    }
+  }}
+  

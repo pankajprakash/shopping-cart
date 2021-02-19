@@ -1,0 +1,66 @@
+ 
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shop-btns{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.back
+{ 
+background-color: black;
+
+}
+.shop-btns ul li{
+    list-style-type: none;
+    display:inline;
+    
+}
+
+.ourCat ul li{
+list-style-type: none;
+padding: 10px;
+}
+.ourCat ul li a{
+    text-decoration: none;
+}
+
+.allItems{
+    display: flex;
+    
+}
+
+.categories{
+    
+    width:;
+    
+}
+.items{
+ display: flex; 
+ flex-wrap: wrap; 
+ flex: 1 ;
+ justify-content:;
+/* width: 70%; */
+
+}
+
+.items div {
+   /* width: 100%; */
+}
+
+#hello{
+    color: blue;
+}
+
+.card-img-top{
+    height: 200px;
+}
+
+.allDiv{
+    margin: 5px;
+}
